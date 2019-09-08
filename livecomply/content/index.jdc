@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="/res/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/res/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/res/icons/favicon-16x16.png">
+	<link rel="manifest" href="/res/icons/site.webmanifest">
+	<link rel="mask-icon" href="/res/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/res/icons/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Live Comply">
+	<meta name="application-name" content="Live Comply">
+	<meta name="msapplication-TileColor" content="#83d4c5">
+	<meta name="msapplication-config" content="/res/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Open+Sans:400,600,800" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet">
+	<link href="style/buttons.css" rel="stylesheet">
+	<link href="style/footer.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/breaks.js" type="text/javascript"></script>
+	<title>Live Comply - Realtime Work Law Compliance Auditing</title>
+</head>
+<jdc javaexecute="livecomply.session.validatesession"/>
+<jdc javaexecute="livecomply.account.reqlog"/>
+<body>
+	<var javagenerate="livecomply.ajax.gentoken"></var>
+	<var javagenerate="livecomply.session.sessionid"></var>
+	<div id="component-wrapper">
+		<div id="content">
+			<div class="white-style-content content-scale-div content-clear">
+					<img id="app-icon" src="res/livecomply.png" alt="Live Comply"/>
+					<div id="clock-form">
+						<form action="#" onsubmit="return clockIn();" class="form-clock" method="post">
+							<input name="eid" placeholder="ID #" type="number" maxlength="6" min="001000"  max="999999" required autofocus tabindex="1" value="">
+							<input name="name" placeholder="Employee Name" type="text" onkeypress="return /[a-z ]/i.test(event.key)" maxlength="32" tabindex="2" required value="">
+							<input name="ctime" placeholder="Time" type="number" maxlength="4" min="0600"  max="2359" tabindex="3" required value="">
+							<input name="btnSubmit" type="submit" class="clock-button" tabindex="4" value="Clock In">
+						</form>
+					</div>
+					<div id="clock-times">
+						<ul id="clock-list">
+							<li id="key">
+								<div class="clock-emp">
+									<p class="clock-item eid">ID #</p>
+									<p class="clock-item ename">Name</p>
+									<p class="clock-item ecin">In</p>
+									<div class="clock-item etens">
+										<p class="bph">Ten</p>
+										<a class="bph" href="#" onclick="clockTens()">Add 10</a>
+									</div>
+									<div class="clock-item eths">
+										<p class="bph">Thirty</p>
+										<a class="bph" href="#" onclick="clockThs()">Add 30</a>
+									</div>
+								</div>
+							</li>
+							<div id="clocks-active">
+								<li onclick="selectActiveClock(this)">
+									<div class="clock-emp">
+										<p class="clock-item eid">004319</p>
+										<p class="clock-item ename">Winter Roberts</p>
+										<p class="clock-item ecin">1400</p>
+										<div class="clock-item etens">
+											<p class="blast">1400</p>
+											<p class="bnext">by 2000</p>
+										</div>
+										<div class="clock-item eths">
+											<p class="blast"></p>
+											<p class="bnext">by 1800</p>
+										</div>
+										<a class="clock-item" href="#" onclick="">Clock Out</a>
+									</div>
+								</li>
+								<li onclick="selectActiveClock(this)">
+									<div class="clock-emp">
+										<p class="clock-item eid">004321</p>
+										<p class="clock-item ename">Brennan Roberts</p>
+										<p class="clock-item ecin">1400</p>
+										<div class="clock-item etens">
+											<p class="blast"></p>
+											<p class="bnext" style="color: #d8000c;">by 1600</p>
+										</div>
+										<div class="clock-item eths">
+											<p class="blast"></p>
+											<p class="bnext">by 1800</p>
+										</div>
+										<a class="clock-item" href="#" onclick="">Clock Out</a>
+									</div>
+								</li>
+							</div>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="page-scale-div">
+		<div class="footer-top">
+			<div class="footer-column footer-image">
+				<img src="res/livecomply_nt_white.png" alt="Live Comply" title="Live Comply"/>
+			</div>
+			<div class="footer-column footer-content">
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p class="footer-copyright" javagenerate="livecomply.footer.copyright"></p>
+		</div>
+	</div>
+</body>
+</html>

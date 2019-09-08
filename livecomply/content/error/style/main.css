@@ -1,0 +1,65 @@
+body, html {
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Cutive Mono', monospace;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	line-height: 1rem;
+}
+
+body p, body h1, body a {
+	margin: 0;
+	padding: 0;
+}
+
+#component-wrapper {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background: #83D4C5;
+	background: linear-gradient(-35deg, #83B7D3, #83D4C5);
+	display: flex;
+	width: 100%;
+	clear: both;
+	letter-spacing: 0;
+	top: 0;
+	height: 100vh;
+	justify-content: center;
+}
+
+#content {
+	position: relative;
+	margin-top: 25vh;
+	width: 400px;
+}
+
+#content .horns-logo {
+	height: auto;
+	width: 25%;
+	min-width: 64px;
+	max-width: 320px;
+}
+
+#content .error-name {
+	font-weight: 400;
+	font-size: 1.4rem;
+	margin-bottom: 0.4rem;
+	margin-left: 2%;
+}
+
+#content .error-name span {
+	font-weight: 600;
+}
+
+#content .error-desc {
+	font-size: 1rem;
+	margin-left: 2%;
+}
+
+@media only screen and (max-width: 500px) {
+	#content {
+		width: 75vw;
+	}
+}

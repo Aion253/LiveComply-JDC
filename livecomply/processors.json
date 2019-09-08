@@ -1,0 +1,5 @@
+{"processors": [{
+  "jdc_class": "net.aionstudios.livecomply.web.Main",
+  "name": "livecomply",
+  "jar": "livecomply.jar"
+}]}

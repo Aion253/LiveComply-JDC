@@ -1,0 +1,312 @@
+form.form-large {
+	padding: 0;
+	margin: 0;
+}
+
+form.form-large {
+	position: relative;
+	width: calc(88%-50px);
+	background: transparent;
+	padding: 25px;
+	margin-left: 6%;
+	margin-right: 6%;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+form.form-large input[type="text"].input-half-right,
+form.form-large input[type="password"].input-half-right {
+	width: calc(50% - 3px);
+}
+
+form.form-large input[type="text"].input-half-left,
+form.form-large input[type="password"].input-half-left {
+	width: calc(50% - 3px);
+}
+
+form.form-large input[type="text"].input-half-right,
+form.form-large input[type="password"].input-half-right, 
+form.form-large input[type="text"].input-half-left,
+form.form-large input[type="password"].input-half-left {
+	display: inline-block;
+}
+
+form.form-large input[type="text"],
+form.form-large input[type="password"] {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 12px;
+	padding-bottom: 10px;
+	background: transparent;
+	background-color: transparent;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	color: #595959;
+	border-bottom: 2px solid #c3c3c3;
+	margin-bottom: 16px;
+	-webkit-transition: border-bottom 0.6s;
+	transition: border-bottom 0.6s;
+	-webkit-transition: background-color 0.6s;
+	transition: background-color 0.6s;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+form.form-large input[type="text"]:focus,
+form.form-large input[type="password"]:focus {
+	outline: none;
+	border-bottom: 2px solid #ef4e3c;
+}
+
+form.form-large input[type="text"].error,
+form.form-large input[type="password"].error {
+	background-color: #ffdddd;
+	border-bottom: 2px solid #d8000c;
+	-webkit-transition: background-color 0.6s;
+	transition: background-color 0.6s;
+}
+
+form.form-large input[type="text"].error:focus,
+form.form-large input[type="password"].error:focus {
+	outline: none;
+	border-bottom: 2px solid #ac0009;
+}
+
+form.form-large .error-text {
+	width: calc(88% - 8px);
+	text-align: right;
+	line-height: 0.8rem;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	margin-top: -30px;
+	color: #d8000c;
+	font-size: 0.6rem;
+	overflow: visible;
+	padding-right: 4px;
+	-webkit-transition: color 0.6s;
+	transition: color 0.6s;
+	pointer-events: none;
+}
+
+form.form-large input[type="text"].error:focus + .error-text,
+form.form-large input[type="password"].error:focus + .error-text {
+	color: #ac0009;
+}
+
+form.form-large .error-text.input-half-right {
+	width: calc(44% - 8px);
+	right: calc(6% + 4px);
+}
+
+form.form-large .error-text.input-half-left {
+	width: calc(44% - 8px);
+}
+
+form.form-large .error-text .input-half-right, 
+form.form-large .error-text .input-half-left {
+	display: inline-block;
+}
+
+form.form-large input[type="submit"],
+form.form-large input[type="button"] {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	padding: 8px 0px 8px 0px;
+	margin-top: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	display: block;
+	text-align: center;
+}
+
+form.form-large input[type="submit"].button-quarter,
+form.form-large input[type="button"].button-quarter {
+	width: 25%;
+}
+
+form.form-large input[type="submit"].button-half,
+form.form-large input[type="button"].button-half {
+	width: 50%;
+}
+
+form.form-large input[type="submit"].button-whole,
+form.form-large input[type="button"].button-whole {
+	width: 100%;
+}
+
+form.form-large input[type="submit"].button-right,
+form.form-large input[type="button"].button-right {
+	float: right;
+}
+
+form.form-large input[type="submit"].button-left,
+form.form-large input[type="button"].button-left {
+	float: left;
+}
+
+form.form-large input[type="submit"]:hover,
+form.form-large input[type="button"]:hover,
+form.form-large input[type="submit"]:focus,
+form.form-large input[type="button"]:focus {
+	cursor: pointer;
+	cursor: hand;
+}
+
+form.form-large input[type="submit"].button-hollow,
+form.form-large input[type="button"].button-hollow {
+	background: transparent;
+	border: solid #ef4e3c 1px;
+	color: #ef4e3c;
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+}
+
+form.form-large input[type="submit"].button-hollow:hover,
+form.form-large input[type="button"].button-hollow:hover,
+form.form-large input[type="submit"].button-hollow:focus,
+form.form-large input[type="button"].button-hollow:focus {
+	background: #fdedeb;
+}
+
+form.form-large input[type="submit"].button-hollow-fill,
+form.form-large input[type="button"].button-hollow-fill {
+	background: transparent;
+	border: solid #ef4e3c 1px;
+	color: #ef4e3c;
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+	-webkit-transition: color 0.6s;
+	transition: color 0.6s;
+}
+
+form.form-large input[type="submit"].button-hollow-fill:hover,
+form.form-large input[type="button"].button-hollow-fill:hover,
+form.form-large input[type="submit"].button-hollow-fill:focus,
+form.form-large input[type="button"].button-hollow-fill:focus {
+	background: #ef4e3c;
+	color: #fff;
+}
+
+form.form-large input[type="submit"].button-fill,
+form.form-large input[type="button"].button-fill {
+	background: #ef4e3c;
+	border: solid #ef4e3c 1px;
+	color: #fff;
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+}
+
+form.form-large input[type="submit"].button-fill:hover,
+form.form-large input[type="button"].button-fill:hover,
+form.form-large input[type="submit"].button-fill:focus,
+form.form-large input[type="button"].button-fill:focus {
+	background: #e52813;
+}
+
+form.form-large input[type="submit"].button-gradient,
+form.form-large input[type="button"].button-gradient {
+	background: linear-gradient(-35deg, #8c0d75, #240d8c);
+	border: solid #ef4e3c 1px;
+	color: #fff;
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+}
+
+form.form-large input[type="submit"].button-gradient:hover,
+form.form-large input[type="button"].button-gradient:hover,
+form.form-large input[type="submit"].button-gradient:focus,
+form.form-large input[type="button"].button-gradient:focus {
+	background: linear-gradient(-35deg, #680a57, #1b0a68);
+}
+
+
+
+form.form-large input[type="checkbox"] {
+	position: relative;
+	float: left;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .75rem;
+	
+	cursor: pointer;
+	appearance: none;
+	outline: 0;
+	z-index: 0;
+	visibility: hidden;
+}
+
+form.form-large input[type="checkbox"]:before {
+	margin-top: 2px;
+	content: '';
+	
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border: 2px solid #f2f2f2;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+form.form-large input[type="checkbox"].error:before {
+	border: 2px solid #d8000c;
+	background: #ffdddd;
+	transition: background-color 0.6s ease-in-out;
+}
+	
+form.form-large input[type="checkbox"]:checked:before {
+	margin-top: 4px;
+	height: 50%;
+	margin-bottom: 50%;
+	
+	transform: rotate(-45deg);
+	background: #fff;
+	border-top-style: none;
+	border-right-style: none;
+	background: #fff;
+	border-color: #ef4e3c;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #f2f2f2 inset;
+}
+
+form.form-large input[type="text"].error:-webkit-autofill,
+form.form-large input[type="password"].error:-webkit-autofill,
+form.form-large input[type="text"].error:-webkit-autofill:hover,
+form.form-large input[type="password"].error:-webkit-autofill:hover,
+form.form-large input[type="text"].error:-webkit-autofill:active,
+form.form-large input[type="password"].error:-webkit-autofill:active {
+	background-color: #ffdddd;
+	border-bottom: 2px solid #d8000c;
+	-webkit-transition: background-color 0.6s;
+	transition: background-color 0.6s;
+	-webkit-box-shadow: 0 0 0 30px #ffdddd inset;
+}
+
+form.form-large input[type="text"].error:-webkit-autofill:focus,
+form.form-large input[type="password"].error:-webkit-autofill:focus {
+	outline: none;
+	border-bottom: 2px solid #ac0009;
+}

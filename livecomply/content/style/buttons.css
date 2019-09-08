@@ -1,0 +1,142 @@
+.button-block {
+	position: relative;
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	padding: 8px 0px 8px 0px;
+	margin-top: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.button-block.button-auto {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.button-block.button-scaled {
+	font-size: 0.87rem;
+	padding: 6px 8px;
+}
+
+
+.button-block.button-quarter {
+	width: 25%;
+}
+
+.button-block.button-max-content {
+	width: max-content;
+}
+
+.button-block.button-half {
+	width: 50%;
+}
+
+.button-block.button-whole {
+	width: 100%;
+}
+
+.button-block.button-right {
+	float: right;
+}
+
+.button-block.button-left {
+	float: left;
+}
+
+.button-block.button-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button-block:hover,
+.button-block:focus {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.button-block.button-hollow {
+	background: transparent;
+	border: solid #83D4C5 1px;
+	color: #83D4C5;
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+}
+
+.button-block.button-hollow:hover,
+.button-block-hollow:focus {
+	background: #fdedeb;
+}
+
+.button-block.button-hollow.white {
+	background: transparent;
+	border: solid #fff 1px;
+	color: #fff;
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+}
+
+.button-block.button-hollow.white:hover,
+.button-block-hollow.white:focus {
+	background: #e52813;
+}
+
+.button-block.button-hollow-fill {
+	background: transparent;
+	border: solid #83D4C5 1px;
+	color: #83D4C5;
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+	-webkit-transition: color 0.6s;
+	transition: color 0.6s;
+}
+
+.button-block.button-hollow-fill:hover,
+.button-block.button-hollow-fill:focus {
+	background: #83D4C5;
+	color: #fff;
+}
+
+.button-block.button-hollow-fill.white {
+	background: transparent;
+	border: solid #fff 1px;
+	color: #fff;
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+	-webkit-transition: color 0.6s;
+	transition: color 0.6s;
+}
+
+.button-block.button-hollow-fill.white:hover,
+.button-block.button-hollow-fill.white:focus {
+	background: #fff;
+	color: #83D4C5;
+}
+
+.button-block.button-fill {
+	background: #83D4C5;
+	border: solid #83D4C5 1px;
+	color: #fff;
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+}
+
+.button-block.button-fill:hover,
+.button-block.button-fill:focus {
+	background: #e52813;
+}
+
+.button-block.button-gradient {
+	background: #83D4C5;
+	background: linear-gradient(-35deg, #ee5b22, #f03a62);
+	border: solid transparent 0px;
+	color: #fff;
+}

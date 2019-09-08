@@ -1,0 +1,10 @@
+{"errors": [{
+  "error_code": 404,
+  "error_file": "/error/404.jdc",
+  "enable_override": true
+},
+{
+  "error_code": 500,
+  "error_file": "/error/500.jdc",
+  "enable_override": true
+}]}

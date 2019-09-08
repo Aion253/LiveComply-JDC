@@ -1,0 +1,111 @@
+#footer {
+	position: relative;
+	padding: 6rem 20% 6rem 20%;
+	width: 60%;
+	background-color: #00D3A9;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#footer .footer-top {
+	position: relative;
+	width: 100%;
+}
+
+#footer .footer-top .footer-column {
+	position: relative;
+	display: inline-block;
+	width: 14.6%;
+	margin: 0;
+	padding: 0;
+	margin-left: 1%;
+	margin-right: 1%;
+	vertical-align: top;
+}
+
+#footer .footer-top .footer-column.footer-image img {
+	width: 50%;
+	max-width: 85px;
+	min-width: 50px;
+}
+
+#footer .footer-top .footer-column.footer-content .column-title {
+	font-weight: 600;
+	margin-top: 0.5rem;
+}
+
+#footer .footer-top .footer-column.footer-content .column-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	font-size: 1rem;
+}
+
+#footer .footer-top .footer-column.footer-content .column-list li a {
+	text-decoration: none;
+	color: #CAE3DD;
+}
+
+#footer .footer-top .footer-column.footer-content .column-list li a:hover {
+	text-decoration: underline;
+}
+
+#footer .footer-bottom {
+	margin-top: 4rem;
+}
+
+@media only screen and (max-height: 500px) {
+	
+}
+
+@media only screen and (max-height: 1268px) {
+	#footer .footer-top .footer-column.footer-image img {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+}
+
+@media only screen and (min-width: 769px) {
+}
+
+@media only screen and (max-width: 968px) {
+	#footer .footer-top .footer-column {
+		position: relative;
+		display: inline-block;
+		width: 30%;
+		margin: 0;
+		padding: 0;
+		margin-left: 1%;
+		margin-right: 1%;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (max-width: 668px) {
+}
+
+@media only screen and (max-width: 568px) {
+	#footer .footer-top .footer-column {
+		position: relative;
+		display: inline-block;
+		width: 98%;
+		margin: 0;
+		padding: 0;
+		margin-left: 1%;
+		margin-right: 1%;
+		vertical-align: top;
+	}
+
+	#footer .footer-top .footer-column.footer-image {
+		width: 98%;
+	}
+	
+	#footer .footer-top .footer-column.footer-image img {
+		width: 50%;
+	}
+}
